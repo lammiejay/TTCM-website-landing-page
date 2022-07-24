@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    /* padding: 0;
+    margin: 0; */
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* NAVBAR STYLING */
+.navbar{
+    width: 100%;
+    height: 65px;
+    margin-top: 20px;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: transparent;
+    /* background-color: #f3f2db; */
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ttcm-logo{
+    width: 10%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.ttcm-logo a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: hsl(0, 0%, 98%);
+    font-weight: 600;
+}
+
+nav{
+    width: 90%;
+    /* border: 2px solid black; */
+}
+
+.nav-links{
+    width: 100%;
+    margin-right: 15px;
+    /* border: 2px solid black; */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    margin-left: 50px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    transition: 0.5s ease-in-out;
+}
+
+.nav-items a:hover, .nav-items a::after{
+    color: greenyellow;
+}
+
+.dropdown-menu{
+    display: none;
+    position: fixed;
+    top: 3.3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.dropdown-menu ul{
+    list-style: none;
+    margin: 5px 15px;
+    margin-left: -30px;
+}
+
+.dropdown-menu ul li{
+    padding: 10px 0;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.dropdown-menu ul li:hover{
+    background-color: hsl(0, 0%, 50%);
+}
+
+.dropdown-menu ul li a{
+    padding: 0 5px;
+}
+
+.dropdown-menu ul li a:hover{
+    color: hsl(0, 0%, 98%);
+}
+
+.dropdown-nav1:hover .menu1{
+    display: block;
+}
+
+.dropdown-nav2:hover .menu2{
+    display: block;
+}
+
+.dropdown-nav3:hover .menu3{
+    display: block;
+}
+
+.menu4{
+    right: 2rem;
+    width: 12rem;
+}
+
+.dropdown-nav4:hover .menu4{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stling for Main */
+.overview{
+    margin-top: -50px;
+    height: 100vh;
+    position: relative;
+    color: hsl(0, 0%, 96%);
+    font-weight: 700;
+    text-align: center;
+}
+
+.overview h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+}
