@@ -77,15 +77,22 @@ nav{
 } */
 
 .donate-btn{
-    background-color: #fb571c;
     padding: 16px 50px;
     border: none;
     border-radius: 30px;
+    background-color: #fb571c;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.donate-btn:hover{
+    background-color: #ffc11f;
 }
 
 .donate-btn a{
     text-decoration: none;
     color: #fff;
+    font-weight: 700;
 }
 
 .nav-links .dropdown-menu{
@@ -245,6 +252,12 @@ nav{
     padding: 16px 50px;
     border: none;
     border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.overview .wlcm-txt button:hover{
+    background-color: #fb571c;
 }
 
 .overview .wlcm-txt button a{
