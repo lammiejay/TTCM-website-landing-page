@@ -5,6 +5,7 @@
 }
 
 body{
+    max-width: 100%;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -493,8 +494,89 @@ nav{
 .back-to-top i{
     border: none;
 }
+
 /* Styling for Footer */
 footer{
+    font: 'DM Sans', sans-serif;
+    color: #FFFFFF;
+    position: relative;
+    margin-top: 70px;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #FFFFFF 37.5%, #F26837 37.5%);
+}
+
+.sign-up{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFC11F;
+    display: flex;
+    justify-content: space-around;
+    max-width: 980px;
+    padding: 56px 56px 53px 56px;
+    border-radius: 160px;
+    position: relative;
+    z-index: 21;
+    /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+    /* margin: 0px 15px 0px 15px; */
+    /* --e-column-margin-right: 015px;
+    --e-column-margin-left: 015px; */
+    /* position: absolute;
+    top: -30px; */
+}
+
+.sign-up p{
+    color: #FFFFFF;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+.sign-up .form input{
+    padding: 11px 55px 10px 20px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #FFFFFF;
+    color: #202020;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    /* border-style: solid; */
+    border-width: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 0%);
+}
+
+.sign-up .form button{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 21px;
+    background-color: #FB571C;
+    color: #FFFFFF;
+    padding: 11px 27.5px 10px 27.5px;
+    margin: 0px 0px 0px -35px;
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sign-up .form button:hover{
+    background-color: #FFC11F;
+}
+
+.footer-nav{
+    max-width: 1180px;
+    padding-top: 80px;
+    padding-bottom: 117px;
+    display: flex;
+    justify-content: space-around;
     background-color: transparent;
     background-image: linear-gradient(165deg, #F26837 61%, #FFBD12 93%);
+    margin: 0 84.5px;
+}
+
+.footer-nav .socials .ttcm{
+    width: 30%;
 }
