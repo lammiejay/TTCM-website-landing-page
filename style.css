@@ -10,7 +10,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'League Spartan', sans-serif;
     letter-spacing: 0px;
     text-align: left;
     color: #202020;
@@ -323,16 +323,16 @@ nav{
 }
 
 .sermon-boxes{
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50% 50% 50%;
-    /* gap: 15px; */
     background-image: url("/Circle.png");
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-position-x: 47.5%;
-    background-position-y: 55%;
+}
+
+.top-box,
+.bottom-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sermon-boxes .box{
@@ -402,8 +402,8 @@ nav{
     border-radius: 6px 6px 6px 6px;
     padding: 20px 26px 17px 26px;
     position: absolute;
-    right: 10px;
-    bottom: 20px;
+    right: 3rem;
+    bottom: 4rem;
     z-index: 22;
     align-self: flex-end;
 }
@@ -497,31 +497,26 @@ nav{
 
 /* Styling for Footer */
 footer{
-    font: 'DM Sans', sans-serif;
+    font-family: 'League Spartan', sans-serif;
     color: #FFFFFF;
+    padding: 0;
     position: relative;
     margin-top: 70px;
-    background-color: transparent;
-    background-image: linear-gradient(180deg, #FFFFFF 37.5%, #F26837 37.5%);
+    background-color: transparent linear-gradient(117deg, #f26837 72%, #FFC11F 99%);
 }
 
+/* SignUp to Newsletter Form */
 .sign-up{
     margin-left: auto;
     margin-right: auto;
     background-color: #FFC11F;
     display: flex;
     justify-content: space-around;
-    max-width: 980px;
+    min-width: 980px;
     padding: 56px 56px 53px 56px;
     border-radius: 160px;
     position: relative;
     z-index: 21;
-    /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
-    /* margin: 0px 15px 0px 15px; */
-    /* --e-column-margin-right: 015px;
-    --e-column-margin-left: 015px; */
-    /* position: absolute;
-    top: -30px; */
 }
 
 .sign-up p{
@@ -542,9 +537,10 @@ footer{
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    /* border-style: solid; */
     border-width: 0px 0px 0px 0px;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 0%);
+    min-width: 405px;
+    min-height: 42px;
 }
 
 .sign-up .form button{
@@ -555,8 +551,9 @@ footer{
     background-color: #FB571C;
     color: #FFFFFF;
     padding: 11px 27.5px 10px 27.5px;
-    margin: 0px 0px 0px -35px;
+    margin-left: -55px;
     border-radius: 90px;
+    min-height: 42px;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -566,17 +563,47 @@ footer{
     background-color: #FFC11F;
 }
 
+/* Footer-Content */
+
 .footer-nav{
-    max-width: 1180px;
-    padding-top: 80px;
+    min-width: 100%;
+    min-height: 430px;
+    padding-top: 180px;
     padding-bottom: 117px;
     display: flex;
     justify-content: space-around;
     background-color: transparent;
     background-image: linear-gradient(165deg, #F26837 61%, #FFBD12 93%);
-    margin: 0 84.5px;
+    position: relative;
 }
 
-.footer-nav .socials .ttcm{
-    width: 30%;
+.newsletter-form{
+    position: absolute;
+    z-index: 54365678;
+    top: -76px;
+}
+
+.footer-nav .socials{
+    max-width: 363px;
+    padding-right: 63.922px;
+    margin: 0 15px;
+}
+
+.footer-nav .socials img{
+    max-width: 200px;
+}
+
+.footer-nav .socials p{
+    margin: 30px 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+.footer-nav .socials a{
+    text-decoration: none;
+    color: inherit;
 }

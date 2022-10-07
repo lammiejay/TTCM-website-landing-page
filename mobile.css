@@ -139,6 +139,16 @@
         font-size: 18px;
         padding-bottom: 14px;
     }
+    
+    .sermons-section{
+        max-width: 100%;
+        padding: 4px;
+    }
+
+    .sermons-section .top .cross-para{
+        margin: 0;
+        margin-bottom: 8px;
+    }
 
 }
 
