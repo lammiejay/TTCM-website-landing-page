@@ -329,12 +329,6 @@ nav{
     background-repeat: no-repeat;
 }
 
-.top-box,
-.bottom-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .sermon-boxes .box{
     text-align: left;
@@ -527,7 +521,7 @@ footer{
     background-color: #FFC11F;
     display: flex;
     justify-content: space-around;
-    min-width: 75%;
+    max-width: 75%;
     padding: 56px 56px 53px 56px;
     border-radius: 160px;
     position: relative;
@@ -587,7 +581,7 @@ footer{
 /* Footer-Content */
 
 .footer-nav{
-    min-width: 100%;
+    max-width: 100%;
     min-height: 430px;
     padding-top: 180px;
     padding-bottom: 117px;

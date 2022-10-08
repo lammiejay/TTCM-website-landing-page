@@ -172,7 +172,15 @@
     
     .sermon-boxes{
         margin: 0;
+        display: grid;
+        background-image: none;
+    }
+
+    .top-box,
+    .bottom-box{
         display: block;
+        justify-content: center;
+        min-width: 100%;
     }
 
     .box{
