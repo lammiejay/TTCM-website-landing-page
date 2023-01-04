@@ -329,6 +329,12 @@ nav{
     background-repeat: no-repeat;
 }
 
+.top-box,
+.bottom-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .sermon-boxes .box{
     text-align: left;
@@ -505,7 +511,7 @@ nav{
 
 /* Styling for Footer */
 footer{
-    min-width: 100%;
+    width: 100%;
     font-family: 'League Spartan', sans-serif;
     color: #FFFFFF;
     padding: 0;
@@ -521,7 +527,7 @@ footer{
     background-color: #FFC11F;
     display: flex;
     justify-content: space-around;
-    max-width: 75%;
+    width: 980px;
     padding: 56px 56px 53px 56px;
     border-radius: 160px;
     position: relative;
@@ -548,7 +554,7 @@ footer{
     line-height: 21px;
     border-width: 0px 0px 0px 0px;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 0%);
-    min-width: 405px;
+    width: 405px;
     min-height: 42px;
 }
 
