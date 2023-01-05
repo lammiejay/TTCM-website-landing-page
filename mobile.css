@@ -178,9 +178,6 @@
 }
 
 @media (max-width: 500px){
-    /* body{
-        margin: 0 20px;
-    } */
     .overview{
         height: 70vh;
     }
@@ -268,6 +265,11 @@
     }
 
     /* Footer */
+    footer{
+        display: block;
+        justify-content: center;
+    }
+
     .sign-up{
         margin: 0 auto;
         width: 100%;
@@ -303,10 +305,14 @@
     .footer-nav{
         display: block;
     }
+
+    .footer-nav .socials{
+        text-align: center;
+    }
     
     /* Short Links */
     .short-links{
-        width: 100%;
+        width: 90%;
         margin: 33px 15px 0px 15px;
     }
 
@@ -315,8 +321,8 @@
     }
 
     .lists{
-        justify-content: space-around;
-        margin-left: -55px;
+        justify-content: safe;
+        /* margin-left: -55px; */
     }
 
     .lists ul li{
