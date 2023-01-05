@@ -161,6 +161,7 @@
         margin: 0;
         margin-bottom: 8px;
     }
+
     .sermon-boxes{
         margin: 0;
         display: grid;
@@ -171,7 +172,7 @@
     .bottom-box{
         display: block;
         justify-content: center;
-        min-width: 100%;
+        width: 100%;
     }
 
 }
@@ -201,7 +202,7 @@
         margin: 0;
         display: grid;
         background-image: none;
-        
+        justify-content: center;
     }
 
     .top-box,
