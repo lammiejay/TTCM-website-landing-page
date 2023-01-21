@@ -115,7 +115,7 @@
     }
 
     .overview{
-        height: 70vh;
+        min-height: 600px;
     }
     
     .overview .wlcm-txt{
@@ -276,7 +276,7 @@
 
     .sign-up{
         /* margin: 0 auto; */
-        width: 90%;
+        width: 80%;
         height: 204px;
         justify-content: center;
         border-radius: 50px;
@@ -357,7 +357,7 @@
 }
 
 
-@media (max-width: 330px){
+/* @media (max-width: 330px){
     .overview .wlcm-txt{
         padding-top: 0;
     }
@@ -387,4 +387,4 @@
         margin-bottom: 10px;
     }
 
-}
+} */
