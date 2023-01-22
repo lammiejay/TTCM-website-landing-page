@@ -380,34 +380,10 @@
 }
 
 
-/* @media (max-width: 330px){
-    .overview .wlcm-txt{
-        padding-top: 0;
-    }
-
-    .sermons-section{
-        max-width: 100%;
-        padding: 4px;
-    }
-
-    .sermons-section .top .cross-para{
-        margin: 0;
-        margin-bottom: 8px;
-    }
-
-    
-    .sermon-boxes{
-        display: block;
-        margin: 0;
-        max-width: 100%;
-        background-image: none;
-    }
-
-    
+@media (max-width: 330px){
     .sermon-boxes .box{
-        margin: 0;
-        width: 100%;
-        margin-bottom: 10px;
+        width: 273px;
+        height: 243px;
     }
 
-} */
+}
