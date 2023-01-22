@@ -382,8 +382,13 @@
 
 @media (max-width: 330px){
     .sermon-boxes .box{
-        width: 273px;
+        width: 290px;
         height: 243px;
+    }
+
+    .sermon-boxes .box h1{
+        /* margin: 0; */
+        font-size: 14px;
     }
 
 }
