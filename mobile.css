@@ -380,6 +380,22 @@
 }
 
 
+@media (max-width: 376px){
+    .sermons-section .top .cross-h1{
+        margin-bottom: 15px;
+    }
+
+    .sermons-section .top .cross-h1 h1{
+        font-size: 26px;
+        
+    }
+
+    .sermon-boxes .box{
+        width: 328px;
+        height: 258px;
+    }
+}
+
 @media (max-width: 330px){
     .sermon-boxes .box{
         width: 290px;
