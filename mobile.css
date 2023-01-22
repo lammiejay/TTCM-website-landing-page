@@ -406,5 +406,31 @@
         /* margin: 0; */
         font-size: 14px;
     }
+    
+    .img-latest{
+        height: 390px;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .img-latest .help-number{
+        background-color: #fff;
+        width: 243px;
+        height: 160px;
+        border-radius: 6px;
+        padding: 20px 26px 17px 26px;
+        position: absolute;
+        right: 1rem;
+        bottom: 2rem;
+        z-index: 22;
+        align-self: flex-end;
+    }
+
+    /* Footer */
+    .sign-up{
+        height: 232px;
+
+    }
 
 }
