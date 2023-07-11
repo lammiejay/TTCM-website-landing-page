@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-width: 100%;
+    /* height: 5000px; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'League Spartan', sans-serif;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #202020;
+    margin: 0;
+}
+
+/* NAVBAR STYLING */
+nav{
+    position: fixed;
+    /*top: 0;
+    left: 0; */
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+    background-color: rgba(34, 34, 34, 0.3);
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+}
+
+.navbar{
+    max-width: 1250px;
+    padding-top: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navbar-collapse{
+    height: 100%;
+    line-height: 70px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-items{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 14px;
+}
+
+/* .nav-items .home-nav{
+    color: #fb571c;
+} */
+
+.nav-items a, 
+.nav-items .dropdown-menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.3s all ease-in-out;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 500px;
+} 
+
+.nav-items a:hover{
+    color: #fb571c;
+}
+
+/* .nav-items .fa-caret-down{
+    width: 22px;
+    text-align: center;
+    height: 100%;
+    line-height: 70px;
+    transition: all 0.3s ease;
+}
+
+.nav-items:hover .fas{
+    transform: rotate(180deg);
+} */
+
+.donate-btn{
+    padding: 16px 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fb571c;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.donate-btn:hover{
+    background-color: #ffc11f;
+}
+
+.donate-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.nav-items .menu1,
+.nav-items .menu2,
+.nav-items .menu3,
+.nav-items .menu4{
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    /* background-color: rgba(34, 34, 34, 0.3); */
+    background-color: #202020;
+    line-height: 40px;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    overflow: hidden;
+}
+
+.dropdown-nav1:hover .menu1,
+.dropdown-nav2:hover .menu2,
+.dropdown-nav3:hover .menu3,
+.dropdown-nav4:hover .menu4{
+    display: block;
+}
+
+.nav-items .dropdown-menu li{
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-items .dropdown-menu li a{
+    text-decoration: none;
+    color: #fff;
+    /* font-weight: 700; */
+    transition: 0.5s ease-in-out;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+} 
+
+.nav-items .dropdown-menu li a:hover{
+    color: #fb571c;
+    font: 20px;
+}
+
+.navbar .search-box{
+    position: relative;
+    height: 40px;
+    width: 40px; 
+}
+
+.navbar .search-box i{
+    color: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar .search-box .input-box{
+    height: 60px;
+    width: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    pointer-events: none;
+    right: calc(100% - 40px);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.navbar.showInput .search-box .input-box{
+    opacity: 1;
+    pointer-events: auto;
+    top: 65px;
+}
+
+.navbar .search-box .input-box::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    right: 10px;
+    top: -6px;
+    transform: rotate(45deg);
+}
+
+
+.navbar .search-box .input-box input{
+    background-color: hsl(0, 0%, 96%);
+    color: #000;
+    position: absolute;
+    height: 35px;
+    width: 280px;
+    z-index: 98;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+
+.navbar .fa-bars,
+.navbar-collapse .sidebar-logo{
+    display: none;
+}
+
+/* .navbar-collapse .sidebar-logo{
+    display: none;
+}
+
+.navbar .fa-bars{
+   display: none;
+} */

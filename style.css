@@ -20,8 +20,8 @@ body{
 
 /* NAVBAR STYLING */
 nav{
-    /* position: absolute;
-    top: 0;
+    position: fixed;
+    /*top: 0;
     left: 0; */
     width: 100%;
     height: 70px;
@@ -63,7 +63,7 @@ nav{
 }
 
 .nav-items a, 
-.nav-links .dropdown-menu li a{
+.nav-items .dropdown-menu li a{
     text-decoration: none;
     color: #fff;
     font-weight: 700;
@@ -89,7 +89,7 @@ nav{
     transform: rotate(180deg);
 } */
 
-.donate-btn{
+/* .donate-btn{
     padding: 16px 50px;
     border: none;
     border-radius: 30px;
@@ -106,30 +106,41 @@ nav{
     text-decoration: none;
     color: #fff;
     font-weight: 700;
-}
+} */
 
-.nav-links .dropdown-menu{
+
+.nav-items .menu1,
+.nav-items .menu2,
+.nav-items .menu3,
+.nav-items .menu4{
     list-style: none;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
     /* background-color: rgba(34, 34, 34, 0.3); */
-    background-color: #fff;
+    background-color: #202020;
     line-height: 40px;
-    border-radius: 4px 4px;
+    border-radius: 0 0 14px 14px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     display: none;
+    overflow: hidden;
 }
 
+.dropdown-nav1:hover .menu1,
+.dropdown-nav2:hover .menu2,
+.dropdown-nav3:hover .menu3,
+.dropdown-nav4:hover .menu4{
+    display: block;
+}
 
-.nav-links .dropdown-menu li{
+.nav-items .dropdown-menu li{
     padding: 0 22px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.nav-links .dropdown-menu li a{
+.nav-items .dropdown-menu li a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     /* font-weight: 700; */
     transition: 0.5s ease-in-out;
     white-space: nowrap;
@@ -137,15 +148,9 @@ nav{
     font-weight: 600;
 } 
 
-.nav-links .dropdown-menu li a:hover{
+.nav-items .dropdown-menu li a:hover{
     color: #fb571c;
-}
-
-.nav-items:hover .menu1,
-.nav-items:hover .menu2,
-.nav-items:hover .menu3,
-.nav-items:hover .menu4{
-    display: block;
+    font: 20px;
 }
 
 .navbar .search-box{
@@ -229,7 +234,7 @@ nav{
 
 /* Styling for Main */
 .overview{
-    /* margin-top: -90px; */
+    /* margin-top: 70px; */
     min-height: 600px;
     width: 100%;
     position: relative;
@@ -239,6 +244,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -30;
 }
 /* 
 .overview video{
@@ -254,7 +260,7 @@ nav{
 
 .overview img{
     position: absolute;
-    top: 0;
+    top: 70px;
     left: 0;
     /* bottom: 0;
     right: 0; */
@@ -608,7 +614,7 @@ footer{
 
 .newsletter-form{
     position: absolute;
-    z-index: 54365678;
+    z-index: 1;
     top: -76px;
 }
 
